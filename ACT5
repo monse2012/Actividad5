@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación</title>
+    <style>
+        /* Estilos para el menú principal */
+        .menu {
+            background-color: #f8ee6c;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu ul li {
+            position: relative;
+        }
+
+        .menu ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+        .menu ul li a:hover {
+            background-color: #5c03b0;
+        }
+
+        /* Estilos para los submenús */
+        .menu ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #5c03b0;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu ul li:hover ul {
+            display: block;
+        }
+
+        .menu ul li ul li a {
+            padding: 10px;
+            width: 150px;
+        }
+
+        .menu ul li ul li a:hover {
+            background-color: #5c03b0;
+        }
+
+        /* Estilo para el fondo de la página */
+        body {
+            background-color: #87CEEB; /* Color celeste */
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="https://www.uv.mx/veracruz/adtusi/">Inicio</a></li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul>
+            display: flex;
+                    <li><a href="https://www.uv.mx/television/">Diseño</a></li>
+                    <li><a href="https://www.uv.mx/veracruz/adtusi/directorio/directorio/">Consultoría</a></li>
+                    <li><a href="https://www.uv.mx/universidad/presentacion/">Desarrollo</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.uv.mx/universidad/presencia-universitaria/">Portafolio</a></li>
+            <li><a href="https://www.uv.mx/comunicate/">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
